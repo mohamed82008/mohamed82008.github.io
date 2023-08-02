@@ -31,7 +31,7 @@ If you are interested in doing a [Google Summer of Code](https://summerofcode.wi
 - [Preconditioners.jl](https://github.com/JuliaLinearAlgebra/Preconditioners.jl)
 - The locally optimal block preconditioned conjugate gradient (LOBPCG) algorithm in [IterativeSolvers.jl](https://github.com/JuliaLinearAlgebra/IterativeSolvers.jl)
 - [AlgebraicMultigrid.jl](https://github.com/JuliaLinearAlgebra/AlgebraicMultigrid.jl)
-- [DifferentiableFactorizations.jl](https://github.com/mohamed82008/DifferentiableFactorizationsjl).
+- [DifferentiableFactorizations.jl](https://github.com/mohamed82008/DifferentiableFactorizations.jl)
 - [TraceEstimators.jl](https://github.com/mohamed82008/TraceEstimators.jl) which is mostly copied from the original [TraceEstimation.jl](https://github.com/luca-aki/TraceEstimation.jl)
 
 ## Bayesian inference
