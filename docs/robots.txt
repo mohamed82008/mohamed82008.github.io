@@ -1,0 +1,4 @@
+Sitemap: https://mohamed82008.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
