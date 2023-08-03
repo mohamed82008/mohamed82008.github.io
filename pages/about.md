@@ -16,13 +16,13 @@ I am originally from Egypt, raised in both Egypt and Saudi Arabia. I currently l
 
 ## Education
 
-I have 3 degrees in different fields from different universities in different countries with different cultures.
+I have 3 degrees in 3 different fields from 3 different universities in 3 different countries with 3 different cultures.
 
 - **Bachelor of Science** in Mechanical Engineering, Alfaisal University, Saudi Arabia.
 - **Master of Science** in Industrial and Systems Engineering, Korea Advanced Institute of Science and Technology, South Korea.
 - **Doctor of Philosophy** in Compter Science, University of New South Wales, Australia.
 
-My [PhD research](https://unsworks.unsw.edu.au/entities/publication/d34622da-75cb-419f-b433-d9a452a2146a/full) was on developing new algorithms for accelerating topology optimization algorithms. All of my PhD research was implemented in an open source software package [TopOpt.jl](https://github.com/JuliaTopOpt/TopOpt.jl).
+My [PhD research](https://unsworks.unsw.edu.au/entities/publication/d34622da-75cb-419f-b433-d9a452a2146a/full) was on developing new algorithms for accelerating topology optimization. All of my PhD research was implemented in an open source software package called [TopOpt.jl](https://github.com/JuliaTopOpt/TopOpt.jl).
 
 ## Work Experience
 
@@ -83,6 +83,8 @@ During my PhD, I worked as a part-time [Julia](https://julialang.org) programmer
 - Population pharmacokinetic modelling
 - Pharmacokinetic-pharmacodynamic (PKPD) modelling
 - Tumour growth dynamics and survival modelling
+- Optimal design of clinical trials
+- Bayesian precision dosing
 - Machine learning augmented pharmacometrics
 
 ### Computational linear algebra
