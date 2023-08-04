@@ -3,7 +3,9 @@
 
 # About
 
-\tableofcontents <!-- you can use \toc as well -->
+\toc
+@def maxtoclevel=2
+@def mintoclevel=2
 
 ## Background
 

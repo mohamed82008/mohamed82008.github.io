@@ -50,3 +50,12 @@ title = "Research"
 1. [**Approximation schemes for stochastic compliance-based topology optimization with many loading scenarios**](https://link.springer.com/article/10.1007/s00158-022-03221-0), Structural and Multidisciplinary Optimization. Apr 13, 2022.
 1. [**Robust and stochastic compliance-based topology optimization with finitely many loading scenarios**](https://link.springer.com/article/10.1007/s00158-021-03022-x), Structural and Multidisciplinary Optimization. Sept 26, 2021.
 1. [**Adaptive continuation solid isotropic material with penalization for volume constrained compliance minimization**](https://www.sciencedirect.com/science/article/pii/S0045782520300621), Computer Methods in Applied Mechanics and Engineering. May 1, 2020.
+
+## Videos
+
+1. [**Understanding automatic differentiation (in Julia)**](https://www.youtube.com/watch?v=UqymrMG-Qi4&t=1862s). Dec 11, 2021.
+1. [**Nonconvex.jl**](https://www.youtube.com/watch?v=eQ9qpsO5OBM), JuMP-dev Workshop. Jul 30, 2021.
+1. [**TopOpt.jl: topology optimization done right**](https://www.youtube.com/watch?v=sBqdkxPXluU), JuliaCon. Jul 29, 2021.
+1. [**Setup, Reading and Developing Julia Packages**](https://www.youtube.com/watch?v=HbR4oCjMCM8), Canberra Julia Language Meetup. Apr 25, 2021.
+1. [**Pumas 2.0 Features: Beyond Gaussian Random Effects**](https://www.youtube.com/watch?v=rSlT6KUwTK4). Mar 30, 2021.
+1. [**Topology Optimization and JuMP**](https://www.youtube.com/watch?v=zNZ_bw1ti00), JuMP-dev Workshop. Jul 28, 2018.
