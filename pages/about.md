@@ -22,7 +22,7 @@ I have 3 degrees in 3 different fields from 3 different universities in 3 differ
 
 - **Bachelor of Science** in Mechanical Engineering, Alfaisal University, Saudi Arabia. **2015**.
 - **Master of Science** in Industrial and Systems Engineering, Korea Advanced Institute of Science and Technology, South Korea. **2017**.
-- **Doctor of Philosophy** in Compter Science, University of New South Wales, Australia. **2021**.
+- **Doctor of Philosophy** in Computer Science, University of New South Wales, Australia. **2021**.
 
 My [PhD research](https://unsworks.unsw.edu.au/entities/publication/d34622da-75cb-419f-b433-d9a452a2146a/full) was on developing new algorithms for accelerating topology optimization. All of my PhD research was implemented in an open source software package called [TopOpt.jl](https://github.com/JuliaTopOpt/TopOpt.jl).
 
