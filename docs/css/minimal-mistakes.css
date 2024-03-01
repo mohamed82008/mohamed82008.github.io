@@ -3165,8 +3165,8 @@ body:hover .visually-hidden button {
 }
 
 .wrapper {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: 16em;
   width: 100%;
 }
 
@@ -3676,8 +3676,8 @@ a.reversefootnote:hover {
 
 .page__hero--overlay {
   position: relative;
-  margin-bottom: 2em;
-  padding: 3em 0;
+  margin-bottom: 3em;
+  padding: 2em 0;
   clear: both;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3686,6 +3686,7 @@ a.reversefootnote:hover {
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
+  zoom: 0.7;
 }
 
 .page__hero--overlay::after {
@@ -4096,6 +4097,7 @@ a.reversefootnote:hover {
 
 .archive__item {
   position: relative;
+  zoom: 0.7;
 }
 
 .archive__subtitle {
@@ -4321,17 +4323,20 @@ a.reversefootnote:hover {
 
   .feature__item:nth-child(3n+1) {
     clear: both;
-    margin-left: 0;
+    margin-left: 4em;
+    margin-bottom: 1.5em;
   }
 
   .feature__item:nth-child(3n+2) {
     clear: none;
     margin-left: 1.6949152542%;
+    margin-left: -3em;
   }
 
   .feature__item:nth-child(3n+3) {
     clear: none;
     margin-left: 1.6949152542%;
+    margin-left: -4em;
   }
 
   .feature__item .feature__item-teaser {
