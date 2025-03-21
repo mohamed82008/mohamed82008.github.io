@@ -24,6 +24,9 @@ title = "Research and Teaching"
 
 ## Conferences
 
+1. [**A DeepNLME-based Tumor Growth Dynamics and Overall Survival Model for Non Small Cell Lung Cancer**](https://pai-marketing-materials.s3.us-east-2.amazonaws.com/2024/Poster/A+DeepNLME-based+Tumor+Growth+Dynamics+and+Overall+Survival+Model+for+Non+Small+Cell+Lung+Cancer.pdf), American Conference on Pharmacometrics. Nov 12, 2024.
+1. [**Make models great again by optimally restricting parameters to make non-identifiable models provably identifiable**](https://www.page-meeting.org/default.asp?abstract=11072), Population Approach Group in Europe. Jun 28, 2024.
+1. [**Bayesian Pharmacometric Software Benchmarks**], American Conference on Pharmacometrics. Nov 7, 2023.
 1. [**DeepPumas for automatic discovery of individualizable functions governing longitudinal patient outcomes**](https://www.page-meeting.org/default.asp?abstract=10522), Population Approach Group in Europe. Jun 27, 2023.
 1. [**Fast cross-validation for Bayesian inference using proposals on a linear subspace**](https://www.page-meeting.org/default.asp?abstract=10636), Population Approach Group in Europe. Jun 27, 2023.
 1. [**Marginal No-U-Turn Sampler for Bayesian Analysis in Pharmacometrics**](https://www.page-meeting.org/default.asp?abstract=10637), Population Approach Group in Europe. Jun 27, 2023.
@@ -49,6 +52,8 @@ title = "Research and Teaching"
 
 ## Journals
 
+1. [**Turing.jl: a general-purpose probabilistic programming language**](https://dl.acm.org/doi/abs/10.1145/3711897), ACM Transactions on Probabilistic Machine Learning. Feb 14, 2025.
+1. [**ReverseDiff: Reverse mode automatic Differentiation for Julia**](https://ui.adsabs.harvard.edu/abs/2024ascl.soft11010R/abstract), Astrophysics Source Code Library. Nov 1, 2024.
 1. [**Scalable Optimal Transport Methods in Machine Learning: A Contemporary Survey**](https://ieeexplore.ieee.org/abstract/document/10476763), IEEE Transactions on Pattern Analysis and Machine Intelligence. Mar 20, 2024.
 1. [**Approximation schemes for stochastic compliance-based topology optimization with many loading scenarios**](https://link.springer.com/article/10.1007/s00158-022-03221-0), Structural and Multidisciplinary Optimization. Apr 13, 2022.
 1. [**Robust and stochastic compliance-based topology optimization with finitely many loading scenarios**](https://link.springer.com/article/10.1007/s00158-021-03022-x), Structural and Multidisciplinary Optimization. Sept 26, 2021.
@@ -56,6 +61,7 @@ title = "Research and Teaching"
 
 ## Videos
 
+1. [**Generaive Machine Learning and Nonlinear Mixed Effects Modelling are the Exact Same Thing**](https://youtu.be/HlExhuvaAVQ?si=LG2Vqu4BK5ooPqCg)
 1. [**Understanding automatic differentiation (in Julia)**](https://www.youtube.com/watch?v=UqymrMG-Qi4&t=1862s). Dec 11, 2021.
 1. [**Nonconvex.jl**](https://www.youtube.com/watch?v=eQ9qpsO5OBM), JuMP-dev Workshop. Jul 30, 2021.
 1. [**TopOpt.jl: topology optimization done right**](https://www.youtube.com/watch?v=sBqdkxPXluU), JuliaCon. Jul 29, 2021.
@@ -66,6 +72,8 @@ title = "Research and Teaching"
 
 ## Workshops Taught
 
+- [Hands-on-Workshop: NLME Modeling Workflows Using Pumas](https://github.com/PumasAI-Labs/Pumas_Berlin_Virtual_Workshop_2025). Virtual 2025. Feb 3-5, 2025.
+- [Scientific Modeling Augmented by Machine-Learning with DeepPumas](https://github.com/PumasAI-Labs/DeepPumas_workshop_2024_ACoP). American Conference on Pharmacometrics 2024. Nov 9-10, 2024.
 - [Intermediate Workshop on Population Modelling Using Pumas](https://github.com/PumasAI-Labs/PAGANZ_2024_NLME_Workshop). Population Approach Group in Australia and New Zealand. Feb 14, 2024.
 - [Scientific Modeling Augmented by Machine-Learning with DeepPumas](https://github.com/PumasAI-Labs/DeepPumas_workshop_2023_ACOP). American Conference on Pharmacometrics 14. Nov 4-5, 2023.
 - [Scientific Modeling Augmented by Machine-Learning with DeepPumas](https://github.com/PumasAI-Labs/DeepPumas_workshop_2023_PAGE). Population Approach Group in Europe. Jun 26-27, 2023.
