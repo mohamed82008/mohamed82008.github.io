@@ -26,7 +26,7 @@ title = "Research and Teaching"
 
 1. [**A DeepNLME-based Tumor Growth Dynamics and Overall Survival Model for Non Small Cell Lung Cancer**](https://pai-marketing-materials.s3.us-east-2.amazonaws.com/2024/Poster/A+DeepNLME-based+Tumor+Growth+Dynamics+and+Overall+Survival+Model+for+Non+Small+Cell+Lung+Cancer.pdf), American Conference on Pharmacometrics. Nov 12, 2024.
 1. [**Make models great again by optimally restricting parameters to make non-identifiable models provably identifiable**](https://www.page-meeting.org/default.asp?abstract=11072), Population Approach Group in Europe. Jun 28, 2024.
-1. [**Bayesian Pharmacometric Software Benchmarks**], American Conference on Pharmacometrics. Nov 7, 2023.
+1. [**Bayesian Pharmacometric Software Benchmarks**](https://github.com/PumasAI-Labs/Bayesian-Benchmarks), American Conference on Pharmacometrics. Nov 7, 2023.
 1. [**DeepPumas for automatic discovery of individualizable functions governing longitudinal patient outcomes**](https://www.page-meeting.org/default.asp?abstract=10522), Population Approach Group in Europe. Jun 27, 2023.
 1. [**Fast cross-validation for Bayesian inference using proposals on a linear subspace**](https://www.page-meeting.org/default.asp?abstract=10636), Population Approach Group in Europe. Jun 27, 2023.
 1. [**Marginal No-U-Turn Sampler for Bayesian Analysis in Pharmacometrics**](https://www.page-meeting.org/default.asp?abstract=10637), Population Approach Group in Europe. Jun 27, 2023.
