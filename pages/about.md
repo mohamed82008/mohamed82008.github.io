@@ -9,7 +9,7 @@
 
 ## Background
 
-I am originally from Egypt, raised in both Egypt and Saudi Arabia. I currently live in Sydney, Australia.
+I am originally from Egypt, raised in both Egypt and Saudi Arabia. I currently live in Sharjah, UAE.
 
 ## Languages
 
