@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.card {
+    @apply w-57 h-50;
+}
+
+@utility card-img {
+    @apply w-26 h-20 mb-3;
+}
+
+.card-head {
+    @apply text-gray-700 font-bold text-2xl mb-2;
+}
+
+.card-desc {
+    @apply text-gray-700 mb-4 text-sm;
+}
+
+.card-button {
+    @apply bg-gray-500 py-1 px-1 text-white font-bold rounded-sm text-lg mr-25 text-center;
+}
+
+.site-header {
+    @apply pl-70 pt-10 pb-10 bg-[url(/assets/home-page-background.png)] bg-black bg-position-[right_bottom_-6rem] bg-no-repeat bg-size-[auto_400px];
+}
