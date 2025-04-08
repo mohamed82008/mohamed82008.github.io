@@ -9,7 +9,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article class="px-10 py-4">
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
@@ -21,5 +21,6 @@
 </article>
 
 <style>
-	@import 'https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css';
+	@import 'tailwindcss';
+	@import 'https://cdn.jsdelivr.net/npm/bootswatch@5.3.5/dist/cosmo/bootstrap.min.css';
 </style>

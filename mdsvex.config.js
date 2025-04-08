@@ -7,7 +7,7 @@ const dirname = path.resolve(fileURLToPath(import.meta.url), '../');
 const config = defineConfig({
     extensions: ['.md', '.svx'],
     smartypants: { dashes: 'oldschool' },
-    layout: { blog: path.join(dirname, './src/pages/_layout.svelte') }
+    // layout: { blog: path.join(dirname, './src/pages/_layout.svelte') }
 });
 
 export default config;
