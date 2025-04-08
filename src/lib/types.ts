@@ -5,4 +5,3 @@ export type Post = {
 	date: string
 	published: boolean
 }
-

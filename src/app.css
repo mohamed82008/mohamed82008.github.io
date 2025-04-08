@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@layer utilities {
+    .myprose {
+        @apply prose max-w-fit;
+    }
+    .myprose h2 {
+        @apply text-2xl mb-3 mt-3 text-blue-700;
+    }
+    .myprose h3 {
+        @apply text-xl mb-3 mt-2;
+    }
+    .myprose p {
+        @apply mb-3 mt-3 text-pretty text-lg;
+    }
+    .myprose li {
+        @apply text-lg;
+    }
+}

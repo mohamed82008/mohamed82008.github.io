@@ -5,3 +5,5 @@ export async function load({ fetch }) {
 	const posts: Post[] = await response.json()
 	return { posts }
 }
+
+export const ssr = false;
