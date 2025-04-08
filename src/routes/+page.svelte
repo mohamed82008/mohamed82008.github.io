@@ -13,42 +13,42 @@
 </header>
 <main class="m-10 ml-50 grid grid-cols-3 gap-12 pr-60">
 	<!-- About -->
-	<a href="/about/" class="card">
+	<a href="/about" class="card">
 		<img src="/user-icon.png" alt="user icon" class="card-img" />
 		<h2 class="card-head">About</h2>
 		<p class="card-desc">Background, education and work.</p>
 		<p class="card-button">Learn more</p>
 	</a>
 	<!-- Research and training -->
-	<a href="/publications/" class="card">
+	<a href="/publications" class="card">
 		<img src="/publish-publishing-icon.png" alt="research icon" class="card-img" />
 		<h2 class="card-head">Research & Teaching</h2>
 		<p class="card-desc">Publications and teaching material.</p>
 		<p class="card-button">Learn more</p>
 	</a>
 	<!-- Software -->
-	<a href="/software/" class="card">
+	<a href="/software" class="card">
 		<img src="/programmer-icon.png" alt="programmer icon" class="card-img" />
 		<h2 class="card-head">Software</h2>
 		<p class="card-desc">Open source contributions.</p>
 		<p class="card-button">Learn more</p>
 	</a>
 	<!-- Mentorship -->
-	<a href="/mentorship/" class="card">
+	<a href="/mentorship" class="card">
 		<img src="/community-icon.png" alt="community icon" class="card-img w-30" />
 		<h2 class="card-head">Mentorship</h2>
 		<p class="card-desc">People and projects I mentored.</p>
 		<p class="card-button">Learn more</p>
 	</a>
 	<!-- Blog posts -->
-	<a href="/blogposts/" class="card">
+	<a href="/blogposts" class="card">
 		<img src="/text-documents-line-icon.png" alt="documents icon" class="card-img" />
 		<h2 class="card-head">Blog posts</h2>
 		<p class="card-desc">Blog posts I have written.</p>
 		<p class="card-button">Learn more</p>
 	</a>
 	<!-- Awareness -->
-	<a href="/awareness/" class="card">
+	<a href="/awareness" class="card">
 		<img src="/head-idea-icon.png" alt="awareness icon" class="card-img" />
 		<h2 class="card-head">Awareness</h2>
 		<p class="card-desc">Raise your awareness.</p>
