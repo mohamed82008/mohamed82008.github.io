@@ -5,8 +5,6 @@ date: '2025-4-8'
 published: true
 ---
 
-# Research and Teaching
-
 \toc
 
 ## Preprints

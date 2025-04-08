@@ -5,11 +5,6 @@ date: '2025-4-8'
 published: true
 ---
 
-<!-- @def title = "About" -->
-<!-- @def tags = ["syntax", "code"] -->
-
-# About
-
 <!-- \toc -->
 <!-- @def maxtoclevel=2 -->
 <!-- @def mintoclevel=2 -->

@@ -5,8 +5,6 @@ date: '2025-4-8'
 published: true
 ---
 
-# Awareness
-
 This page will provide you with links that can help you (if interested) expand your awareness of topics that mean a lot to me.
 
 - [The Palestinian struggle](/awareness/palestine)
