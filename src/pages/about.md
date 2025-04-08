@@ -5,10 +5,6 @@ date: '2025-4-8'
 published: true
 ---
 
-<!-- \toc -->
-<!-- @def maxtoclevel=2 -->
-<!-- @def mintoclevel=2 -->
-
 ## Background
 
 I am originally from Egypt, raised in both Egypt and Saudi Arabia. I currently live in Sharjah, UAE.
