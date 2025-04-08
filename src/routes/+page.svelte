@@ -1,9 +1,3 @@
-<head>
-	<meta charset="utf-8" />
-	<title>Mohamed Tarek's Personal Website</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
 <header class="site-header">
 	<h1 class="mb-5 text-4xl font-bold text-white">Mohamed Tarek, PhD</h1>
 	<p class="text-xl/8 text-white">
