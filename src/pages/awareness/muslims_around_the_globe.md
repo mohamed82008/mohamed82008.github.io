@@ -1,6 +1,12 @@
-+++
-title = "Muslims around the globe"
-+++
+---
+title: Mulsims around the globe
+description: Muslims around the globe
+date: '2025-4-8'
+categories:
+  - sveltekit
+  - svelte
+published: true
+---
 
 <!-- Stopped at Mustafa Azemmouri - The first Muslim to Explore America -->
 

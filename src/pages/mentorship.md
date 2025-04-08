@@ -1,6 +1,12 @@
-+++
-title = "Mentorship"
-+++
+---
+title: Mentorship
+description: People I mentored
+date: '2025-4-8'
+categories:
+  - sveltekit
+  - svelte
+published: true
+---
 
 # Mentorship
 

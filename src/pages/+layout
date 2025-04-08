@@ -1,0 +1,5 @@
+<script>
+    import {convertDate} from '$lib/utils.js'; export let title; export let author; export let date;
+</script>
+
+<slot />

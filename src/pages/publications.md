@@ -1,7 +1,12 @@
-+++
-title = "Research and Teaching"
-+++
-
+---
+title: Research and Teaching
+description: Publications and workshops taught
+date: '2025-4-8'
+categories:
+  - sveltekit
+  - svelte
+published: true
+---
 
 # Research and Teaching
 

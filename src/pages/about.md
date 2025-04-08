@@ -1,11 +1,20 @@
-@def title = "About"
-@def tags = ["syntax", "code"]
+---
+title: About
+description: About Mohamed Tarek
+date: '2025-4-8'
+categories:
+  - sveltekit
+  - svelte
+published: true
+---
+<!-- @def title = "About" -->
+<!-- @def tags = ["syntax", "code"] -->
 
 # About
 
-\toc
-@def maxtoclevel=2
-@def mintoclevel=2
+<!-- \toc -->
+<!-- @def maxtoclevel=2 -->
+<!-- @def mintoclevel=2 -->
 
 ## Background
 

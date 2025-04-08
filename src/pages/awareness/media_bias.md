@@ -1,6 +1,12 @@
-+++
-title = "Media bias"
-+++
+---
+title: Media bias
+description: Understand media bias
+date: '2025-4-8'
+categories:
+  - sveltekit
+  - svelte
+published: true
+---
 
 # Media bias
 
