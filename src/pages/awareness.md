@@ -2,9 +2,6 @@
 title: Awareness
 description: Raise your awareness
 date: '2025-4-8'
-categories:
-  - sveltekit
-  - svelte
 published: true
 ---
 

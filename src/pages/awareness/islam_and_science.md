@@ -2,9 +2,6 @@
 title: Islam and Science
 description: Understand the relationship between Islam and Science.
 date: '2025-4-8'
-categories:
-  - sveltekit
-  - svelte
 published: true
 ---
 
@@ -32,7 +29,7 @@ The works of Ibn al-Haytham were frequently cited during the scientific revoluti
 
 ## Muhammad ibn Musa al-Khwarizmi
 
-al-Khwarizmi was a Persian scientist from modern day Uzbekistan or Turkmenistan, who is considered by many to be the founder of the modern field of **algebra**. The word *algebra* itself is derived from the Arabic word *al-jabr* which means *the completion/rejoining/restoration*. This term was first coined by al-Khwarizmi in one of his books in the field of algebra. The words **algorithm** in English and **guarismo** in Spanish (meaning digit) are also adaptations of his name *al-Khwarizmi*.
+al-Khwarizmi was a Persian scientist from modern day Uzbekistan or Turkmenistan, who is considered by many to be the founder of the modern field of **algebra**. The word _algebra_ itself is derived from the Arabic word _al-jabr_ which means _the completion/rejoining/restoration_. This term was first coined by al-Khwarizmi in one of his books in the field of algebra. The words **algorithm** in English and **guarismo** in Spanish (meaning digit) are also adaptations of his name _al-Khwarizmi_.
 
 ### Articles
 
@@ -44,7 +41,7 @@ al-Khwarizmi was a Persian scientist from modern day Uzbekistan or Turkmenistan,
 
 ## Abu Ali al-Husain ibn Sina (Avicenna)
 
-Ibn Sina was (most probably) from a city located in modern day Uzbekistan, born in the 10th century. He is most famous for his works in the fields of medicine and philosophy and is often described as the father of early modern medicine. His book [*The Canon of Medicine*](https://en.wikipedia.org/wiki/The_Canon_of_Medicine) was, reportedly, a standard academic text taught in medical schools and universities in Europe up until the 18th century, nearly 800 years after his death.
+Ibn Sina was (most probably) from a city located in modern day Uzbekistan, born in the 10th century. He is most famous for his works in the fields of medicine and philosophy and is often described as the father of early modern medicine. His book [_The Canon of Medicine_](https://en.wikipedia.org/wiki/The_Canon_of_Medicine) was, reportedly, a standard academic text taught in medical schools and universities in Europe up until the 18th century, nearly 800 years after his death.
 
 ### Articles
 

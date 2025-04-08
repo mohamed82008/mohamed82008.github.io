@@ -2,9 +2,6 @@
 title: Software
 description: Open source software.
 date: '2025-4-8'
-categories:
-  - sveltekit
-  - svelte
 published: true
 ---
 
