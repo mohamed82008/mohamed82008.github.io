@@ -1,168 +1,123 @@
 ---
 const { frontmatter } = Astro.props;
-import personalPhoto from '../assets/personal_photo.png';
+import "../styles/markdown.css";
+import personalPhoto from "../assets/personal_photo.png";
+import { icon } from "@fortawesome/fontawesome-svg-core";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+const mapIcon = icon({
+  prefix: "fas",
+  iconName: faMapMarkerAlt.iconName,
+});
 ---
 
 <html lang="en">
-	<head>
-		<title>{frontmatter.title}</title>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	</head>
-	<!-- ... -->
-	<body class="flex flex-row space-x-5 w-full mt-0">
-		<aside
-			class="pl-6 mr-0 max-w-60 min-w-60 sticky top-0 h-screen w-100 rounded border-gray-100 bg-blue-100 px-2 py-0 sm:px-4;"
-		>
-			<div class="mt-7 ml-2 flex font-bold">
-				<a class="text-lg text-blue-600 p-2 rounded" href="/">Back to Home Page</a>
-			</div>
-			<img class="mt-9 ml-5 w-36 h-36 rounded-full" src={personalPhoto.src} alt="Mohamed Tarek" />
-			<div class="pl-3">
-				<p class="text-2xl mb-3 font-bold">Mohamed Tarek</p>
-				<p class="mt-2">Always learning.</p>
-			</div>
-			<ul class="author__urls">
-				<li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-					<i class="fas fa-fw fa-map-marker-alt"></i>
-					<span itemprop="name">Sydney</span>
-				</li>
-				<li>
-					<a href="https://github.com/mohamed82008"><i class="fab fa-fw fa-github"></i> GitHub</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/mabdelaty/" rel="nofollow noopener noreferrer"
-						><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a
-					>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/@MrMohamed82008" rel="nofollow noopener noreferrer"
-						><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a
-					>
-				</li>
-				<li>
-					<a
-						href="https://scholar.google.com.au/citations?user=um_AxkwAAAAJ&hl=en"
-						rel="nofollow noopener noreferrer"
-						><i class="ai ai-google-scholar-square" aria-hidden="true"></i> Google Scholar</a
-					>
-				</li>
-				<li>
-					<a
-						href="https://www.researchgate.net/profile/Mohamed-Tarek-18"
-						rel="nofollow noopener noreferrer"
-						><i class="ai ai-researchgate-square" aria-hidden="true"></i> ResearchGate</a
-					>
-				</li>
-				<li>
-					<a href="https://arxiv.org/a/tarek_m_1.html" rel="nofollow noopener noreferrer"
-						><i class="ai ai-arxiv-square" aria-hidden="true"></i> arXiv</a
-					>
-				</li>
+  <head>
+    <title>{frontmatter.title}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="flex flex-row space-x-5 w-full mt-0 m-0">
+    <aside
+      class="pl-6 mx-0 max-w-60 min-w-60 sticky top-0 h-screen w-100 border-gray-100 bg-black px-2 py-0 sm:px-4;"
+    >
+      <div class="mt-7 ml-2 flex font-bold">
+        <a class="text-lg text-yellow-100 p-2 rounded" href="/"
+          >Back to Home Page</a
+        >
+      </div>
+      <img
+        class="mt-9 ml-5 w-36 h-36 rounded-full"
+        src={personalPhoto.src}
+        alt="Mohamed Tarek"
+      />
+      <div class="pl-3 text-white">
+        <p class="text-2xl mb-3 font-bold">Mohamed Tarek</p>
+        <p class="mt-2">Always learning.</p>
+        <ul>
+          <li class="flex">
+            <span class="w-4 pt-1 mr-3">
+              <Fragment set:html={mapIcon.html} />
+            </span>
+            <span> Sydney </span>
+          </li>
+          <!-- <li>
+            <span class="w-4 pt-1 mr-3">
+              <Fragment set:html={githubIcon.html} />
+            </span>
+            <span> GitHub </span>
+          </li>
+          <li>
+            <span class="w-4 pt-1 mr-3">
+              <Fragment set:html={linkedinIcon.html} />
+            </span>
+            <a
+              href="https://www.linkedin.com/in/mabdelaty/"
+              rel="nofollow noopener noreferrer"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a
+            >
+          </li> -->
+          <!-- 
+          <li>
+            <a
+              href="https://www.youtube.com/@MrMohamed82008"
+              rel="nofollow noopener noreferrer"
+              ><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://scholar.google.com.au/citations?user=um_AxkwAAAAJ&hl=en"
+              rel="nofollow noopener noreferrer"
+              ><i class="ai ai-google-scholar-square" aria-hidden="true"></i> Google
+              Scholar</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.researchgate.net/profile/Mohamed-Tarek-18"
+              rel="nofollow noopener noreferrer"
+              ><i class="ai ai-researchgate-square" aria-hidden="true"></i> ResearchGate</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://arxiv.org/a/tarek_m_1.html"
+              rel="nofollow noopener noreferrer"
+              ><i class="ai ai-arxiv-square" aria-hidden="true"></i> arXiv</a
+            >
+          </li>
 
-				<li>
-					<a href="https://github.com/mohamed82008">GitHub</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/mabdelaty/"></a> LinkedIn
-				</li>
-			</ul>
-			<!-- <li>
-					<a href="https://www.youtube.com/@MrMohamed82008"> YouTube</a>
-				</li>
-				<li>
-					<a href="https://scholar.google.com.au/citations?user=um_AxkwAAAAJ&hl=en">
-						Google Scholar</a
-					>
-				</li>
-				<li>
-					<a href="https://www.researchgate.net/profile/Mohamed-Tarek-18"> ResearchGate</a>
-				</li>
-				<li>
-					<a href="https://arxiv.org/a/tarek_m_1.html"> arXiv</a>
-				</li> -->
-		</aside>
-		<main class="myprose w-full">
-			<nav class="sticky bg-white top-0 shadow-md">
-				<h1>{frontmatter.title}</h1>
-				<hr class="h-px my-4 mr-10 bg-gray-200 border-0 dark:bg-gray-700" />
-			</nav>
-			<div class="ml-2 mb-10 mt-8">
-				<div>
-					<slot />
-				</div>
-			</div>
-		</main>
-	</body>
+          <li>
+            <a href="https://github.com/mohamed82008">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mabdelaty/"></a> LinkedIn
+          </li> -->
+        </ul>
+      </div>
+    </aside>
+    <main class="w-full">
+      <nav class="sticky bg-white top-0 shadow-md">
+        <h1>{frontmatter.title}</h1>
+        <hr class="h-px my-4 bg-gray-200 dark:bg-gray-700" />
+      </nav>
+      <div class="ml-2 mb-10 mt-8">
+        <!-- Markdown content is injected here -->
+        <!-- ... -->
+        <slot />
+      </div>
+    </main>
+  </body>
 </html>
 
-<!-- Markdown content is injected here -->
-<!-- ... -->
-
 <style>
-	@import 'tailwindcss';
-
-	.myprose {
-		@apply mt-4 mr-20 ml-10;
-	}
-	.myprose h1 {
-		@apply mt-0 pt-4 pb-0 text-3xl font-bold;
-	}
-	.myprose h2 {
-		@apply mt-3 mb-3 text-2xl text-blue-700;
-	}
-	.myprose h3 {
-		@apply mt-2 mb-3 text-xl;
-	}
-	.myprose p {
-		@apply mt-3 mb-3 text-lg text-pretty;
-	}
-	.myprose li {
-		@apply text-lg;
-	}
-	@layer base {
-		:global(h2) {
-			counter-increment: h2;
-			counter-reset: h3;
-			@apply text-2xl;
-		}
-		:global(h3) {
-			counter-increment: h3;
-			counter-reset: h4;
-			@apply text-xl;
-		}
-		:global(p) {
-			@apply text-lg;
-		}
-		:global(li) {
-			@apply text-lg;
-		}
-		:global(h2):before {
-			content: counter(h2) '. ';
-		}
-		:global(h3):before {
-			content: counter(h2) '.' counter(h3) '. ';
-		}
-		:global(h4):before {
-			content: counter(h2) '.' counter(h3) '.' counter(h4) '. ';
-		}
-	}
-	.author__urls {
-		display: none;
-		position: absolute;
-		right: 0;
-		margin-top: 15px;
-		padding: 10px;
-		list-style-type: none;
-		border: 1px solid #f2f3f3;
-		border-radius: 4px;
-		background: #fff;
-		z-index: -1;
-		box-shadow:
-			0 2px 4px 0 rgba(0, 0, 0, 0.16),
-			0 2px 10px 0 rgba(0, 0, 0, 0.12);
-		cursor: default;
-	}
+  @import "tailwindcss";
+  main {
+    @apply mt-4 pr-5 pl-10;
+  }
+  h1 {
+    @apply pt-4 pb-0 text-3xl font-bold;
+  }
 </style>
