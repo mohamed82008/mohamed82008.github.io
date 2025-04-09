@@ -3,15 +3,16 @@ title: Software
 description: Open source software.
 date: '2025-4-8'
 published: true
+layout: ../layouts/Layout.astro
 ---
+
+## Overview
 
 All of the open source software projects I worked on can be found on my [GitHub page](https://github.com/mohamed82008). The following is a summary of my significant open source contributions categorized by field.
 
 **I am not involved in some of these projects anymore** but I try to maintain many of the packages I started, although some may be neglected. If you are interested in any of the software I created and you think it is neglected, feel free to contact me and let me know! **You can always open an issue and ping me.**
 
 If you are interested in doing a [Google Summer of Code](https://summerofcode.withgoogle.com) project in any of my projects especially in topology optimization or non-convex optimization, **I am open to mentoring**. So please reach out.
-
-\toc
 
 ## Topology optimization
 

@@ -3,9 +3,8 @@ title: Media bias
 description: Understand media bias
 date: '2025-4-8'
 published: true
+layout: ../../layouts/Layout.astro
 ---
-
-# Media bias
 
 ## Videos
 

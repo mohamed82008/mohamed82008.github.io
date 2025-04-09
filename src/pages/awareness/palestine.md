@@ -3,9 +3,8 @@ title: The Palestinian struggle
 description: Understand the Palestinian struggle
 date: '2025-4-8'
 published: true
+layout: ../../layouts/Layout.astro
 ---
-
-# The Palestinian struggle
 
 ## Short-form videos
 

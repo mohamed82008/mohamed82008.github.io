@@ -3,11 +3,10 @@ title: Mulsims around the globe
 description: Muslims around the globe
 date: '2025-4-8'
 published: true
+layout: ../../layouts/Layout.astro
 ---
 
 <!-- Stopped at Mustafa Azemmouri - The first Muslim to Explore America -->
-
-# Muslims around the globe
 
 Nowadays, many people believe that Islam is this foreign religion mostly practiced by some people in the middle east. Unfortunately, this viewpoint overlooks the fact that the history of Islam and Muslims is largely intertwined with much of the local culture and history of many countries spanning east, west, north and south. For instance, Indonesia which is not even in the middle east is the country with the largest Muslim population in the world as of today. Your own country's history may have been partly influenced by a Muslim historical character whom you never heard of. One YouTube channel dedicated to short stories about significant historical Muslim figures is [Omar of the Orient](https://www.youtube.com/@OmaroftheOrient). Omar is a half Egyptian history educator who has covered some of the most fascinating stories on his channel. This page is dedicated to some of his videos where I categorise them by country. If you see your country's name below, chances are there is an interesting story about a Muslim person from your own country's history which you never heard about. I will try to keep the list up to date every once in a while.
 

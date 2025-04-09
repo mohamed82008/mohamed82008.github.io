@@ -1,8 +1,10 @@
 ---
 title: About
+author: Mohamed Tarek
 description: About Mohamed Tarek
 date: '2025-4-8'
 published: true
+layout: ../layouts/Layout.astro
 ---
 
 ## Background

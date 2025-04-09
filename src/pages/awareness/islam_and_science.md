@@ -3,9 +3,8 @@ title: Islam and Science
 description: Understand the relationship between Islam and Science.
 date: '2025-4-8'
 published: true
+layout: ../../layouts/Layout.astro
 ---
-
-# Islam and science
 
 Many believe that religion is fundamentally anti-scientific. However, the truth of the matter remains that many of the early scientists were religious people of the Muslim faith. I don't claim to be an expert in other religions but at least in Islam, I firmly believe that I can be a good scientist and religious at the same time. I know for a fact that my Islamic upbringing encouraged me to develop my critical thinking and logical reasoning skills (the how is for another day).
 
