@@ -9,6 +9,7 @@
   h2 {
     counter-increment: h2;
     counter-reset: h3;
+    color: black
   }
   h2:before {
     content: counter(h2) ". ";
@@ -16,6 +17,7 @@
   h3 {
     counter-increment: h3;
     counter-reset: h4;
+    color: black
   }
   h3:before {
     content: counter(h2) "." counter(h3) ". ";
