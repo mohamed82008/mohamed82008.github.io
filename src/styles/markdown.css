@@ -1,7 +1,3 @@
-:root {
-  --margin: 10px;
-}  
-
 @layer base {
   h2:before {
     content: counter(h2) ". ";
