@@ -1,13 +1,17 @@
 ---
 const { frontmatter } = Astro.props;
-import "../styles/markdown.css";
+import IconCard from "../components/IconCard.astro";
 import personalPhoto from "../assets/personal_photo.png";
 import { icon } from "@fortawesome/fontawesome-svg-core";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-const mapIcon = icon({
-  prefix: "fas",
-  iconName: faMapMarkerAlt.iconName,
-});
+import {
+  faGithub,
+  faYoutube,
+  faLinkedin,
+  faGoogleScholar,
+  faResearchgate,
+} from "@fortawesome/free-brands-svg-icons";
+import "../styles/markdown.css";
 ---
 
 <html lang="en">
@@ -18,97 +22,67 @@ const mapIcon = icon({
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
-  <body
-    class="flex flex-row space-x-5 w-full mt-0 m-0 bg-slate-300 text-slate-800 text-xl"
-  >
-    <aside
-      class="pl-6 mx-0 max-w-60 min-w-60 sticky top-0 h-screen w-100 border-gray-100 bg-slate-900 px-2 py-0 sm:px-4;"
-    >
-      <div class="mt-7 ml-2 flex font-bold">
-        <a class="text-lg text-yellow-100 p-2 rounded" href="/"
-          >Back to Home Page</a
-        >
-      </div>
-      <img
-        class="mt-9 ml-5 w-36 h-36 rounded-full"
-        src={personalPhoto.src}
-        alt="Mohamed Tarek"
-      />
-      <div class="pl-3 text-white">
-        <p class="text-2xl mb-3 font-bold">Mohamed Tarek</p>
-        <p class="mt-2">Always learning.</p>
-        <ul>
-          <li class="flex">
-            <span class="w-4 pt-1 mr-3">
-              <Fragment set:html={mapIcon.html} />
-            </span>
-            <span> Sydney </span>
-          </li>
-          <!-- <li>
-            <span class="w-4 pt-1 mr-3">
-              <Fragment set:html={githubIcon.html} />
-            </span>
-            <span> GitHub </span>
-          </li>
-          <li>
-            <span class="w-4 pt-1 mr-3">
-              <Fragment set:html={linkedinIcon.html} />
-            </span>
-            <a
-              href="https://www.linkedin.com/in/mabdelaty/"
-              rel="nofollow noopener noreferrer"
-              ><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a
-            >
-          </li> -->
-          <!-- 
-          <li>
-            <a
-              href="https://www.youtube.com/@MrMohamed82008"
-              rel="nofollow noopener noreferrer"
-              ><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://scholar.google.com.au/citations?user=um_AxkwAAAAJ&hl=en"
-              rel="nofollow noopener noreferrer"
-              ><i class="ai ai-google-scholar-square" aria-hidden="true"></i> Google
-              Scholar</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.researchgate.net/profile/Mohamed-Tarek-18"
-              rel="nofollow noopener noreferrer"
-              ><i class="ai ai-researchgate-square" aria-hidden="true"></i> ResearchGate</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://arxiv.org/a/tarek_m_1.html"
-              rel="nofollow noopener noreferrer"
-              ><i class="ai ai-arxiv-square" aria-hidden="true"></i> arXiv</a
-            >
-          </li>
-
-          <li>
-            <a href="https://github.com/mohamed82008">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/mabdelaty/"></a> LinkedIn
-          </li> -->
-        </ul>
+  <body>
+    <aside>
+      <a class="text-lg text-white p-2" href="/">
+        <img
+          class="mt-5 w-26 h-26 flex ml-8 mr-8 rounded-full"
+          src={personalPhoto.src}
+          alt="Mohamed Tarek"
+        />
+        <p class="text-xl mb-3 mt-8 ml-4 font-bold text-orange-200">
+          Mohamed Tarek
+        </p>
+      </a>
+      <div class="text-white">
+        <div class="pl-6 pt-3 text-lg">
+          <IconCard icon={icon(faMapMarkerAlt)}> Sharjah </IconCard>
+          <IconCard
+            href="https://github.com/mohamed82008/"
+            icon={icon(faGithub)}
+          >
+            GitHub
+          </IconCard>
+          <IconCard
+            href="https://www.linkedin.com/in/mabdelaty/"
+            icon={icon(faLinkedin)}
+          >
+            LinkedIn
+          </IconCard>
+          <IconCard
+            href="https://www.youtube.com/@MrMohamed82008/"
+            icon={icon(faYoutube)}
+          >
+            YouTube
+          </IconCard>
+          <IconCard
+            href="https://scholar.google.com.au/citations?user=um_AxkwAAAAJ&hl=en/"
+            icon={icon(faGoogleScholar)}
+          >
+            Google Scholar
+          </IconCard>
+          <IconCard
+            href="https://www.researchgate.net/profile/Mohamed-Tarek-18/"
+            icon={icon(faResearchgate)}
+          >
+            ResearchGate
+          </IconCard>
+          <IconCard
+            href="https://arxiv.org/a/tarek_m_1.html/"
+            path="/src/assets/arxiv.ico"
+          >
+            arXiv
+          </IconCard>
+        </div>
       </div>
     </aside>
-    <main class="w-full">
-      <nav
-        class="sticky bg-slate-900 text-white top-0 shadow-md rounded-full h-16"
-      >
-        <h1 class="justify-center flex">
+    <main>
+      <nav>
+        <h1>
           {frontmatter.title}
         </h1>
       </nav>
-      <article class="ml-2 mb-10 mt-8">
+      <article>
         <!-- Markdown content is injected here -->
         <!-- ... -->
         <slot />
@@ -120,9 +94,21 @@ const mapIcon = icon({
 <style>
   @import "tailwindcss";
   main {
-    @apply mt-4 pr-5 pl-10;
+    @apply mt-4 pr-5 pl-10 w-full;
+  }
+  aside {
+    @apply pl-6 pt-7 mx-0 max-w-50 min-w-50 sticky top-0 h-screen w-100 bg-slate-900 px-2 py-0 sm:px-4;
+  }
+  body {
+    @apply flex flex-row space-x-5 w-full mt-0 m-0 bg-white text-gray-900 text-xl;
+  }
+  nav {
+    @apply sticky bg-slate-900 text-white top-0 shadow-md rounded-full h-16;
+  }
+  article {
+    @apply ml-6 mb-10 mt-8;
   }
   h1 {
-    @apply pt-4 pb-0 text-3xl font-bold;
+    @apply pt-4 pb-0 text-3xl font-bold justify-center flex;
   }
 </style>

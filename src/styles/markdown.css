@@ -9,7 +9,8 @@
   h2 {
     counter-increment: h2;
     counter-reset: h3;
-    color: black
+    color: black;
+    font-size: 26px;
   }
   h2:before {
     content: counter(h2) ". ";
@@ -24,5 +25,15 @@
   }
   h4:before {
     content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+  }
+  p {
+    line-height: 1.5;
+  }
+  li {
+    line-height: 1.5;
+  }
+  a {
+    color: #0074d9;
+    text-decoration: none;
   }
 }

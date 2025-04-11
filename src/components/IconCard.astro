@@ -1,0 +1,29 @@
+---
+const { href = "", icon = "", path = "" } = Astro.props;
+---
+
+{
+  href ? (
+    <a class="flex pb-2" href={href}>
+      <div class="w-4.5 h-4.5 pt-0.5 mr-3">
+        {path ? <img src={path} /> : <Fragment set:html={icon.html} />}
+      </div>
+      <span>
+        <slot />
+      </span>
+    </a>
+  ) : (
+    <div class="flex pb-2">
+      <div class="w-3.5 h-3.5 pt-0.5 mr-3">
+        <Fragment set:html={icon.html} />
+      </div>
+      <span>
+        <slot />
+      </span>
+    </div>
+  )
+}
+
+<style>
+  @import "tailwindcss";
+</style>
