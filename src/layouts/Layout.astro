@@ -2,6 +2,7 @@
 const { frontmatter } = Astro.props;
 import IconCard from "../components/IconCard.astro";
 import personalPhoto from "../assets/personal_photo.png";
+import arxivIcon from "../assets/arxiv.ico";
 import { icon } from "@fortawesome/fontawesome-svg-core";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -67,10 +68,7 @@ import "../styles/markdown.css";
           >
             ResearchGate
           </IconCard>
-          <IconCard
-            href="https://arxiv.org/a/tarek_m_1.html/"
-            path="/src/assets/arxiv.ico"
-          >
+          <IconCard href="https://arxiv.org/a/tarek_m_1.html/" path={arxivIcon}>
             arXiv
           </IconCard>
         </div>
