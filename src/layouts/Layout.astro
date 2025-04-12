@@ -21,7 +21,6 @@ import "../styles/markdown.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <aside>
@@ -91,11 +90,15 @@ import "../styles/markdown.css";
 
 <style>
   @import "tailwindcss";
+  html {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+  }
   main {
     @apply pr-5 pl-10 w-full;
   }
   aside {
-    @apply pl-6 pt-15 mx-0 max-w-50 min-w-50 sticky top-0 h-screen w-100 bg-slate-900 px-2 py-0 sm:px-4;
+    @apply pl-6 pt-15 mx-0 max-w-50 min-w-50 sticky top-0 h-screen w-100 h-full bg-slate-900 px-2 py-0 sm:px-4;
   }
   body {
     @apply flex flex-row space-x-5 w-full mt-0 m-0 bg-white text-gray-900 text-xl;
@@ -110,3 +113,18 @@ import "../styles/markdown.css";
     @apply pt-4 pb-0 text-3xl font-bold justify-center flex;
   }
 </style>
+
+<script>
+  const anchorHeadings = document.querySelectorAll("h2, h3, h4, h5, h6");
+  [...anchorHeadings].forEach((heading) => {
+    const anchor = document.createElement("a");
+    anchor.className = "text-black cursor-pointer";
+    anchor.href = `#${heading.id}`;
+    // Move heading's existing content into the anchor
+    while (heading.firstChild) {
+      anchor.appendChild(heading.firstChild);
+    }
+    // Append the anchor to the heading
+    heading.appendChild(anchor);
+  });
+</script>
