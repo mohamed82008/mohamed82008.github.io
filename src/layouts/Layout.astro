@@ -1,17 +1,6 @@
 ---
 const { frontmatter } = Astro.props;
-import IconCard from "../components/IconCard.astro";
-import personalPhoto from "../assets/personal_photo.png";
-import arxivIcon from "../assets/arxiv.ico";
-import { icon } from "@fortawesome/fontawesome-svg-core";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faYoutube,
-  faLinkedin,
-  faGoogleScholar,
-  faResearchgate,
-} from "@fortawesome/free-brands-svg-icons";
+import LeftSide from "../components/LeftSide.astro";
 import "../styles/markdown.css";
 ---
 
@@ -24,54 +13,7 @@ import "../styles/markdown.css";
   </head>
   <body>
     <aside>
-      <a class="text-lg text-white p-2" href="/">
-        <img
-          class="mt-5 w-26 h-26 flex ml-8 mr-8 rounded-full"
-          src={personalPhoto.src}
-          alt="Mohamed Tarek"
-        />
-        <p class="text-xl mb-3 mt-8 ml-4 font-bold text-orange-200">
-          Mohamed Tarek
-        </p>
-      </a>
-      <div class="text-white">
-        <div class="pl-6 pt-3 text-lg">
-          <IconCard icon={icon(faMapMarkerAlt)}> Sharjah </IconCard>
-          <IconCard
-            href="https://github.com/mohamed82008/"
-            icon={icon(faGithub)}
-          >
-            GitHub
-          </IconCard>
-          <IconCard
-            href="https://www.linkedin.com/in/mabdelaty/"
-            icon={icon(faLinkedin)}
-          >
-            LinkedIn
-          </IconCard>
-          <IconCard
-            href="https://www.youtube.com/@MrMohamed82008/"
-            icon={icon(faYoutube)}
-          >
-            YouTube
-          </IconCard>
-          <IconCard
-            href="https://scholar.google.com.au/citations?user=um_AxkwAAAAJ&hl=en/"
-            icon={icon(faGoogleScholar)}
-          >
-            Google Scholar
-          </IconCard>
-          <IconCard
-            href="https://www.researchgate.net/profile/Mohamed-Tarek-18/"
-            icon={icon(faResearchgate)}
-          >
-            ResearchGate
-          </IconCard>
-          <IconCard href="https://arxiv.org/a/tarek_m_1.html/" path={arxivIcon}>
-            arXiv
-          </IconCard>
-        </div>
-      </div>
+      <LeftSide />
     </aside>
     <main>
       <nav>
