@@ -28,31 +28,31 @@ import LeftSide from "../components/LeftSide.astro";
         of Sydney
       </p>
     </header>
-    <main class="flex m-10 pr-0">
+    <main class="flex my-5 mx-10 pr-0">
       <aside>
         <LeftSide text_color_1="text-blue-500" text_color_2="text-black" />
       </aside>
-      <div class="grid grid-cols-3 gap-10 ml-40">
+      <div class="grid grid-cols-3 gap-x-16 gap-y-8 ml-40 my-10">
         <!-- About -->
         <a href="/about" class="card">
           <img src={userIcon.src} alt="user icon" class="card-img" />
           <h2 class="card-head">About</h2>
           <p class="card-desc">Background, education and work.</p>
-          <p class="card-button">Learn more</p>
+          <!-- <p class="card-button">Learn more</p> -->
         </a>
         <!-- Research and training -->
         <a href="/publications" class="card">
           <img src={pubsIcon.src} alt="research icon" class="card-img" />
           <h2 class="card-head">Research & Teaching</h2>
           <p class="card-desc">Publications and teaching material.</p>
-          <p class="card-button">Learn more</p>
+          <!-- <p class="card-button">Learn more</p> -->
         </a>
         <!-- Software -->
         <a href="/software" class="card">
           <img src={softwareIcon.src} alt="programmer icon" class="card-img" />
           <h2 class="card-head">Software</h2>
           <p class="card-desc">Open source contributions.</p>
-          <p class="card-button">Learn more</p>
+          <!-- <p class="card-button">Learn more</p> -->
         </a>
         <!-- Mentorship -->
         <a href="/mentorship" class="card">
@@ -63,21 +63,21 @@ import LeftSide from "../components/LeftSide.astro";
           />
           <h2 class="card-head">Mentorship</h2>
           <p class="card-desc">People and projects I mentored.</p>
-          <p class="card-button">Learn more</p>
+          <!-- <p class="card-button">Learn more</p> -->
         </a>
         <!-- Blog posts -->
         <a href="/blogposts" class="card">
           <img src={blogPostsIcon.src} alt="documents icon" class="card-img" />
           <h2 class="card-head">Blog posts</h2>
           <p class="card-desc">Blog posts I have written.</p>
-          <p class="card-button">Learn more</p>
+          <!-- <p class="card-button">Learn more</p> -->
         </a>
         <!-- Awareness -->
         <a href="/awareness" class="card">
           <img src={awarenessIcon.src} alt="awareness icon" class="card-img" />
           <h2 class="card-head">Awareness</h2>
           <p class="card-desc">Raise your awareness.</p>
-          <p class="card-button">Learn more</p>
+          <!-- <p class="card-button">Learn more</p> -->
         </a>
       </div>
     </main>
@@ -88,7 +88,7 @@ import LeftSide from "../components/LeftSide.astro";
   @import "tailwindcss";
 
   aside {
-    @apply pr-10 pl-6 max-w-50 min-w-50 sticky top-0 bg-slate-100 sm:px-4;
+    @apply pr-10 pl-6 mt-3 max-w-50 min-w-50 sticky top-0 bg-slate-100 sm:px-4;
   }
 
   .card {
@@ -107,11 +107,11 @@ import LeftSide from "../components/LeftSide.astro";
     @apply mb-4 text-slate-800;
   }
 
-  .card-button {
+  /* .card-button {
     @apply mr-30 rounded-sm bg-gray-500 px-1 py-1 text-center text-sm font-bold text-white w-20;
-  }
+  } */
 
   .site-header {
-    @apply bg-black bg-[url("../assets/home-page-background.png")] bg-size-[auto_350px] bg-position-[right_bottom_-6rem] bg-no-repeat pt-5 pb-15 pl-70 text-slate-200 h-30;
+    @apply bg-black bg-[url("../assets/home-page-background.png")] bg-size-[auto_350px] bg-position-[right_bottom_-6rem] bg-no-repeat pt-5 pb-15 pl-90 text-slate-200 h-30;
   }
 </style>
