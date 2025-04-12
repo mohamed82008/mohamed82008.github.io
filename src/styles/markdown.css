@@ -10,7 +10,8 @@
     scroll-margin-top: 70px;
   }
   h2:before {
-    content: counter(h2) ". ";
+    content: counter(h2) "  ";
+    white-space: pre;
   }
   h3 {
     counter-increment: h3;
@@ -18,10 +19,12 @@
     color: black
   }
   h3:before {
-    content: counter(h2) "." counter(h3) ". ";
+    content: counter(h2) "." counter(h3) "  ";
+    white-space: pre;
   }
   h4:before {
-    content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+    content: counter(h2) "." counter(h3) "." counter(h4) "  ";
+    white-space: pre;
   }
   p {
     line-height: 1.5;
