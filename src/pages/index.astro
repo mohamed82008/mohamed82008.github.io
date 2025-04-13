@@ -17,22 +17,20 @@ import LeftSide from "../components/LeftSide.astro";
     <link rel="icon" href="https://fav.farm/👨🏻‍💻" />
   </head>
 
-  <body class="m-0 bg-slate-100">
+  <body class="m-0 bg-[var(--primary_bg_color)]">
     <header class="site-header">
       <h1 class="mb-5 text-4xl font-bold text-white">Mohamed Tarek, PhD</h1>
-      <p class="text-xl/8 text-orange-200">
-        Senior Product Engineer <span class="text-blue-300 font-bold">@</span> PumasAI
-        Inc.
+      <p class="text-xl/8 text-white">
+        Senior Product Engineer @ PumasAI Inc.
         <br />
-        Research Affiliate <span class="text-blue-300 font-bold">@</span> University
-        of Sydney
+        Research Affiliate @ University of Sydney
       </p>
     </header>
     <main class="flex my-5 ml-10 pr-0">
       <aside>
         <LeftSide text_color_1="text-blue-500" text_color_2="text-black" />
       </aside>
-      <div class="grid grid-cols-3 gap-x-16 gap-y-8 ml-20 mb-10 mt-5">
+      <div class="grid grid-cols-3 gap-x-16 gap-y-8 ml-35 mb-10 mt-8">
         <!-- About -->
         <a href="/about" class="card">
           <img src={userIcon.src} alt="user icon" class="card-img" />
@@ -86,13 +84,16 @@ import LeftSide from "../components/LeftSide.astro";
 
 <style>
   @import "tailwindcss";
+  :root {
+    --primary_bg_color: var(--color-violet-100);
+  }
 
   aside {
-    @apply pr-5 pl-5 mt-3 max-w-50 min-w-50 sticky top-0 bg-slate-100 sm:px-4;
+    @apply pr-5 pl-5 mt-3 max-w-50 min-w-50 sticky top-0 bg-[var(--primary_bg_color)] sm:px-4;
   }
 
   .card {
-    @apply p-2 pt-5 border-1 border-slate-300 bg-gray-200 rounded-3xl container;
+    @apply p-2 pt-5 border-1 border-slate-300 bg-blue-200 rounded-3xl container hover:scale-105 transition-shadow duration-300 hover:shadow-lg;
   }
 
   @utility card-img {
