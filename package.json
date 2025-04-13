@@ -25,7 +25,7 @@
   "scripts": {
     "generate-search-index": "bun run src/scripts/generate-search-index.ts",
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "bun run generate-search-index && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
