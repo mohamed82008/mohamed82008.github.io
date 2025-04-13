@@ -9,6 +9,7 @@ node_modules
 /build
 /dist
 /.astro
+public/search-index.json
 
 # OS
 .DS_Store
