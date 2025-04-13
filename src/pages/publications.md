@@ -1,10 +1,12 @@
 ---
 title: Research and Teaching
 description: Publications and workshops taught
-date: '2025-4-8'
+date: "2025-4-8"
 published: true
 layout: ../layouts/Layout.astro
 ---
+
+The following is the list of my publications, including preprints, conference posters and presentations, journal papers, videos and workshops taught.
 
 ## Preprints
 
