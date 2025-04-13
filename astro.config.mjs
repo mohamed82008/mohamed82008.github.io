@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import remarkToc from "remark-toc";
 import icon from "astro-icon";
+import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,5 +16,5 @@ export default defineConfig({
       [remarkToc, { heading: "content", maxDepth: 2, ordered: true }],
     ],
   },
-  integrations: [icon()],
+  integrations: [icon(), svelte()],
 });

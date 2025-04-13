@@ -6,6 +6,7 @@ import communityIcon from "../assets/community-icon.png";
 import blogPostsIcon from "../assets/text-documents-line-icon.png";
 import awarenessIcon from "../assets/head-idea-icon.png";
 import LeftSide from "../components/LeftSide.astro";
+import SearchBar from "../components/SearchBar.svelte";
 ---
 
 <!doctype html>
@@ -30,53 +31,70 @@ import LeftSide from "../components/LeftSide.astro";
       <aside>
         <LeftSide text_color_1="text-blue-500" text_color_2="text-black" />
       </aside>
-      <div class="grid grid-cols-3 gap-x-16 gap-y-8 ml-35 mb-10 mt-8">
-        <!-- About -->
-        <a href="/about" class="card">
-          <img src={userIcon.src} alt="user icon" class="card-img" />
-          <h2 class="card-head">About</h2>
-          <p class="card-desc">Background, education and work.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Research and training -->
-        <a href="/publications" class="card">
-          <img src={pubsIcon.src} alt="research icon" class="card-img" />
-          <h2 class="card-head">Research & Teaching</h2>
-          <p class="card-desc">Publications and teaching material.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Software -->
-        <a href="/software" class="card">
-          <img src={softwareIcon.src} alt="programmer icon" class="card-img" />
-          <h2 class="card-head">Software</h2>
-          <p class="card-desc">Open source contributions.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Mentorship -->
-        <a href="/mentorship" class="card">
-          <img
-            src={communityIcon.src}
-            alt="community icon"
-            class="card-img w-30"
-          />
-          <h2 class="card-head">Mentorship</h2>
-          <p class="card-desc">People and projects I mentored.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Blog posts -->
-        <a href="/blogposts" class="card">
-          <img src={blogPostsIcon.src} alt="documents icon" class="card-img" />
-          <h2 class="card-head">Blog posts</h2>
-          <p class="card-desc">Blog posts I have written.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Awareness -->
-        <a href="/awareness" class="card">
-          <img src={awarenessIcon.src} alt="awareness icon" class="card-img" />
-          <h2 class="card-head">Awareness</h2>
-          <p class="card-desc">Raise your awareness.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
+      <div class="block">
+        <div class="ml-20">
+          <SearchBar client:load />
+        </div>
+        <div class="grid grid-cols-3 gap-x-16 gap-y-8 ml-35 mb-10 mt-8">
+          <!-- About -->
+          <a href="/about" class="card">
+            <img src={userIcon.src} alt="user icon" class="card-img" />
+            <h2 class="card-head">About</h2>
+            <p class="card-desc">Background, education and work.</p>
+            <!-- <p class="card-button">Learn more</p> -->
+          </a>
+          <!-- Research and training -->
+          <a href="/publications" class="card">
+            <img src={pubsIcon.src} alt="research icon" class="card-img" />
+            <h2 class="card-head">Research & Teaching</h2>
+            <p class="card-desc">Publications and teaching material.</p>
+            <!-- <p class="card-button">Learn more</p> -->
+          </a>
+          <!-- Software -->
+          <a href="/software" class="card">
+            <img
+              src={softwareIcon.src}
+              alt="programmer icon"
+              class="card-img"
+            />
+            <h2 class="card-head">Software</h2>
+            <p class="card-desc">Open source contributions.</p>
+            <!-- <p class="card-button">Learn more</p> -->
+          </a>
+          <!-- Mentorship -->
+          <a href="/mentorship" class="card">
+            <img
+              src={communityIcon.src}
+              alt="community icon"
+              class="card-img w-30"
+            />
+            <h2 class="card-head">Mentorship</h2>
+            <p class="card-desc">People and projects I mentored.</p>
+            <!-- <p class="card-button">Learn more</p> -->
+          </a>
+          <!-- Blog posts -->
+          <a href="/blogposts" class="card">
+            <img
+              src={blogPostsIcon.src}
+              alt="documents icon"
+              class="card-img"
+            />
+            <h2 class="card-head">Blog posts</h2>
+            <p class="card-desc">Blog posts I have written.</p>
+            <!-- <p class="card-button">Learn more</p> -->
+          </a>
+          <!-- Awareness -->
+          <a href="/awareness" class="card">
+            <img
+              src={awarenessIcon.src}
+              alt="awareness icon"
+              class="card-img"
+            />
+            <h2 class="card-head">Awareness</h2>
+            <p class="card-desc">Raise your awareness.</p>
+            <!-- <p class="card-button">Learn more</p> -->
+          </a>
+        </div>
       </div>
     </main>
   </body>
@@ -84,6 +102,12 @@ import LeftSide from "../components/LeftSide.astro";
 
 <style>
   @import "tailwindcss";
+
+  html {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+  }
+
   :root {
     --primary_bg_color: var(--color-violet-100);
   }

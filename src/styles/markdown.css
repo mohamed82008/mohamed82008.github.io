@@ -38,4 +38,16 @@
     color: #0074d9;
     text-decoration: none;
   }
+  h1 a {
+    color: white;
+  }
+  h2 a {
+    color: black;
+  }
+  h3 a {
+    color: black;
+  }
+  h4 a {
+    color: black;
+  }
 }

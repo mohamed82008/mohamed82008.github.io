@@ -1,6 +1,7 @@
 ---
 const { frontmatter } = Astro.props;
 import LeftSide from "../components/LeftSide.astro";
+import SearchBar from "../components/SearchBar.svelte";
 import "../styles/markdown.css";
 ---
 
@@ -22,6 +23,9 @@ import "../styles/markdown.css";
         <h1>
           {frontmatter.title}
         </h1>
+        <div>
+          <SearchBar client:load />
+        </div>
       </nav>
       <article>
         <!-- Markdown content is injected here -->
@@ -59,10 +63,10 @@ import "../styles/markdown.css";
 </style>
 
 <script>
-  const anchorHeadings = document.querySelectorAll("h2, h3, h4, h5, h6");
+  const anchorHeadings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
   [...anchorHeadings].forEach((heading) => {
     const anchor = document.createElement("a");
-    anchor.className = "text-black cursor-pointer";
+    anchor.className = "cursor-pointer";
     anchor.href = `#${heading.id}`;
     // Move heading's existing content into the anchor
     while (heading.firstChild) {
