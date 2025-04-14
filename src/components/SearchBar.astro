@@ -1,0 +1,17 @@
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<div class="bg-slate-100 p-0 pl-5" id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      showImages: false,
+      resetStyles: true,
+    });
+  });
+</script>
+
+<style>
+  @import "tailwindcss";
+</style>
