@@ -9,7 +9,6 @@ node_modules
 /build
 /dist
 /.astro
-public/search-index.json
 public/pagefind
 
 # OS
