@@ -10,7 +10,7 @@ import SearchBar from "../components/SearchBar.astro";
 ---
 
 <!doctype html>
-<html lang="en" class="lg:w-300">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Mohamed Tarek's Personal Website</title>
@@ -18,116 +18,202 @@ import SearchBar from "../components/SearchBar.astro";
     <link rel="icon" href="https://fav.farm/👨🏻‍💻" />
   </head>
 
-  <body class="m-0 p-0 bg-[var(--primary_bg_color)] lg:w-full">
-    <header class="site-header">
-      <h1 class="mb-5 text-4xl mt-5 font-bold text-white">
-        Mohamed Tarek, PhD
-      </h1>
-      <p class="text-xl/8 text-white">
+  <body>
+    <header>
+      <h1>Mohamed Tarek, PhD</h1>
+      <p>
         Senior Product Engineer @ PumasAI Inc.
         <br />
         Research Affiliate @ University of Sydney
       </p>
     </header>
-    <main class="flex my-5 ml-10 pr-0 mr-0 pr-0">
-      <aside class="h-screen sticky ml-4 p-0 w-50 lg:w-60 pt-15 lg:pt-0">
+    <main>
+      <aside>
         <LeftSide text_color_1="text-blue-500" text_color_2="text-black" />
       </aside>
-      <div class="w-55 mx-0 p-0 lg:w-200 lg:ml-90 absolute z-50">
-        <SearchBar />
-        <div class="my-20"></div>
-      </div>
-      <div
-        class="lg:h-120 grid lg:grid-cols-3 gap-x-40 gap-y-10 lg:gap-y-8 ml-20 mb-10 mt-20 mr-0 pr-0"
-      >
-        <!-- About -->
-        <a href="/about" class="card">
-          <img src={userIcon.src} alt="user icon" class="card-img" />
-          <h2 class="card-head">About</h2>
-          <p class="card-desc">Background, education and work.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Research and training -->
-        <a href="/publications" class="card">
-          <img src={pubsIcon.src} alt="research icon" class="card-img" />
-          <h2 class="card-head">Research & Teaching</h2>
-          <p class="card-desc">Publications and teaching material.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Software -->
-        <a href="/software" class="card">
-          <img src={softwareIcon.src} alt="programmer icon" class="card-img" />
-          <h2 class="card-head">Software</h2>
-          <p class="card-desc">Open source contributions.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Mentorship -->
-        <a href="/mentorship" class="card">
-          <img
-            src={communityIcon.src}
-            alt="community icon"
-            class="card-img w-30"
-          />
-          <h2 class="card-head">Mentorship</h2>
-          <p class="card-desc">People and projects I mentored.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Blog posts -->
-        <a href="/blogposts" class="card">
-          <img src={blogPostsIcon.src} alt="documents icon" class="card-img" />
-          <h2 class="card-head">Blog posts</h2>
-          <p class="card-desc">Blog posts I have written.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-        <!-- Awareness -->
-        <a href="/awareness" class="card">
-          <img src={awarenessIcon.src} alt="awareness icon" class="card-img" />
-          <h2 class="card-head">Awareness</h2>
-          <p class="card-desc">Raise your awareness.</p>
-          <!-- <p class="card-button">Learn more</p> -->
-        </a>
-      </div>
+      <section>
+        <div class="search-bar-container">
+          <div class="search-bar">
+            <SearchBar />
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <!-- About -->
+          <a href="/about">
+            <img src={userIcon.src} alt="user icon" />
+            <h2>About</h2>
+            <p>Background, education and work.</p>
+          </a>
+          <!-- Research and training -->
+          <a href="/publications">
+            <img src={pubsIcon.src} alt="research icon" />
+            <h2>Research & Teaching</h2>
+            <p>Publications and teaching material.</p>
+          </a>
+          <!-- Software -->
+          <a href="/software">
+            <img src={softwareIcon.src} alt="programmer icon" />
+            <h2>Software</h2>
+            <p>Open source contributions.</p>
+          </a>
+          <!-- Mentorship -->
+          <a href="/mentorship">
+            <img src={communityIcon.src} alt="community icon" />
+            <h2>Mentorship</h2>
+            <p>People and projects I mentored.</p>
+          </a>
+          <!-- Blog posts -->
+          <a href="/blogposts">
+            <img src={blogPostsIcon.src} alt="documents icon" />
+            <h2>Blog posts</h2>
+            <p>Blog posts I have written.</p>
+          </a>
+          <!-- Awareness -->
+          <a href="/awareness">
+            <img src={awarenessIcon.src} alt="awareness icon" />
+            <h2>Awareness</h2>
+            <p>Raise your awareness.</p>
+          </a>
+        </div>
+      </section>
     </main>
   </body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    html {
+      overflow: scroll;
+      scroll-behavior: smooth;
+      overscroll-behavior: none;
+    }
+
+    :root {
+      --primary_bg_color: oklch(96.8% 0.007 247.896);
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr;
+      background-color: var(--primary_bg_color);
+    }
+
+    header {
+      background-color: black;
+      background-image: url("../assets/home-page-background.png");
+      background-size: auto 200%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      padding-left: 17vw;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      position: sticky;
+      z-index: 2;
+      top: 0;
+    }
+
+    header > h1 {
+      padding-bottom: 1rem;
+      font-size: 2.3rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    header > p {
+      font-size: 1.3rem;
+      color: rgb(202, 194, 165);
+    }
+
+    main {
+      padding-right: 60px;
+      display: grid;
+      grid-template-columns: 280px auto;
+      grid-template-rows: 100%;
+    }
+
+    aside {
+      padding-left: 40px;
+      margin-top: 10%;
+      position: sticky;
+      min-width: 250px;
+      height: 25vh;
+      top: 30%;
+      background: var(--primary_bg_color);
+    }
+
+    section {
+      margin-left: 10px;
+      padding-bottom: 10px;
+
+      .search-bar-container {
+        position: relative;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 70px;
+
+        .search-bar {
+          z-index: 1;
+          width: 90%;
+          position: absolute;
+        }
+      }
+
+      .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 260px);
+        row-gap: 30px;
+        column-gap: 5px;
+        justify-content: space-around;
+        margin-top: 80px;
+        margin-left: 5%;
+        margin-right: 10%;
+
+        a {
+          max-width: 280px;
+          min-width: 280px;
+          max-height: 200px;
+          min-height: 200px;
+          display: grid;
+          grid-template-columns: 300px;
+          row-gap: 6%;
+          justify-content: center;
+          justify-items: center;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          border-radius: 2em;
+          background-color: oklch(88.2% 0.059 254.128);
+          border: 1px solid oklch(86.9% 0.022 252.894);
+          transition-property: box-shadow scale;
+          transition-duration: 300ms;
+          &:hover {
+            scale: 1.05;
+            box-shadow:
+              0 10px 15px -3px rgb(0 0 0 / 0.1),
+              0 4px 6px -4px rgb(0 0 0 / 0.1);
+          }
+
+          img {
+            width: 30%;
+          }
+
+          h2 {
+            margin-bottom: 0.1em;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: oklch(27.9% 0.041 260.031);
+          }
+
+          p {
+            margin-bottom: 0.1em;
+            color: oklch(27.9% 0.041 260.031);
+          }
+        }
+      }
+    }
+  </style>
 </html>
-
-<style>
-  @import "tailwindcss";
-
-  html {
-    scroll-behavior: smooth;
-    overscroll-behavior: none;
-  }
-
-  :root {
-    --primary_bg_color: var(--color-slate-100);
-  }
-
-  aside {
-    @apply pr-5 lg:pl-5 mt-3 sticky top-0 bg-[var(--primary_bg_color)] lg:pr-4;
-  }
-
-  .card {
-    @apply p-2 pt-5 m-0 w-65 h-50 border-1 border-slate-300 bg-blue-200 rounded-3xl container hover:scale-105 transition-shadow duration-300 hover:shadow-lg;
-  }
-
-  @utility card-img {
-    @apply h-20 w-24 mx-auto;
-  }
-
-  .card-head {
-    @apply mb-2 text-2xl font-bold text-slate-800 flex justify-center;
-  }
-
-  .card-desc {
-    @apply mb-4 text-slate-800 flex justify-center;
-  }
-
-  /* .card-button {
-    @apply mr-30 rounded-sm bg-gray-500 px-1 py-1 text-center text-sm font-bold text-white w-20;
-  } */
-
-  .site-header {
-    @apply bg-black lg:bg-[url("../assets/home-page-background.png")] lg:bg-size-[auto_350px] bg-position-[right_15rem_bottom_-6rem] bg-no-repeat pt-5 pb-15 pl-55 lg:pl-90 text-slate-200 h-30 w-full;
-  }
-</style>
