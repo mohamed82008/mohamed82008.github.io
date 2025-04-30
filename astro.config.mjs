@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import remarkToc from "remark-toc";
 import icon from "astro-icon";
+import bun from '@hedystia/astro-bun'
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,4 +17,6 @@ export default defineConfig({
     ],
   },
   integrations: [icon()],
+  output: 'server',
+  adapter: bun(),
 });

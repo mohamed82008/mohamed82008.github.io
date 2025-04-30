@@ -1,0 +1,17 @@
+---
+import LoginForm from '../components/LoginForm.vue'
+
+// Get redirect URL from query string, default to /ludo
+const redirect = Astro.url.searchParams.get('redirect') || '/ludo'
+---
+
+<html lang="en">
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <LoginForm redirect={redirect} />
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+---
+import { supabase } from '../lib/supabase-client'
+import Game from '../components/Ludo.vue'
+
+const token = Astro.cookies.get('sb:token')?.value
+
+if (!token) {
+  return Astro.redirect(`/login?redirect=${Astro.url.pathname}`)
+}
+
+// Get user information from Supabase (Server-side)
+const { data: { user }, error } = await supabase.auth.api.getUser(token)
+
+if (error || !user) {
+  return Astro.redirect('/login')
+}
+
+// Pass user data as prop to Vue component
+---
+
+<Game user={user} />
