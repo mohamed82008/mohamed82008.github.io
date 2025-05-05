@@ -13,53 +13,80 @@ import "../styles/markdown.css";
     <link rel="icon" href="https://fav.farm/👨🏻‍💻" />
   </head>
   <body>
-    <aside class="hidden lg:block">
-      <!-- Show aside only on larger screens -->
-      <div class="mt-10">
-        <LeftSide />
-      </div>
+    <aside>
+      <LeftSide text_color_1="rgb(205, 167, 40)" text_color_2="white" />
     </aside>
     <main>
-      <nav>
-        <h1>
-          {frontmatter.title}
-        </h1>
-      </nav>
       <article>
-        <!-- Markdown content is injected here -->
-        <!-- ... -->
-        <slot />
+        <div class="article-title">
+          <h1>
+            {frontmatter.title}
+          </h1>
+        </div>
+        <div class="article-body">
+          <!-- Markdown content is injected here -->
+          <!-- ... -->
+          <slot />
+        </div>
       </article>
     </main>
   </body>
 </html>
 
 <style>
-  @import "tailwindcss";
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
   html {
     scroll-behavior: smooth;
     overscroll-behavior: none;
   }
-  body {
-    @apply flex flex-col w-full bg-white text-gray-900 text-base;
-  }
   main {
-    @apply p-4 w-full;
+    padding: 1em;
   }
   aside {
-    @apply pl-6 pt-15 mx-0 max-w-50 min-w-50 sticky top-0 h-screen w-100 h-full bg-slate-900 px-2 py-0 sm:px-4;
+    position: sticky;
+    font-size: 1rem;
+    padding-left: 2em;
+    padding-top: 5em;
+    min-width: 240px;
+    max-width: 240px;
+    top: 0;
+    background-color: oklch(20.8% 0.042 265.755);
+    height: 100vh;
+    /* Show aside only on larger screens */
+    @media (width < 64rem) {
+      display: none;
+    }
   }
   body {
-    @apply flex flex-row space-x-5 w-full mt-0 m-0 bg-white text-gray-900 text-xl;
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
   }
-  nav {
-    @apply sticky bg-slate-900 text-white top-0 shadow-md rounded-full h-16 flex items-center justify-center; /* Centered title */
+  .article-title {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0.5em;
+    background-color: oklch(20.8% 0.042 265.755);
+    border-radius: 2em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+  .article-body {
+    @media (width >= 64rem) {
+      margin: 0em 2em 0em 1em;
+    }
+    text-wrap: pretty;
   }
   article {
-    @apply px-2 lg:px-10 mb-10 pt-5;
-  }
-  h1 {
-    @apply text-2xl font-bold;
+    margin: 0em 2em;
+    margin-bottom: 1em;
   }
 </style>
 

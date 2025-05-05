@@ -11,22 +11,16 @@ import {
   faGoogleScholar,
   faResearchgate,
 } from "@fortawesome/free-brands-svg-icons";
-const { text_color_1 = "text-orange-200", text_color_2 = "text-white" } =
+const { text_color_1 = "rgb(105, 87, 20)", text_color_2 = "black" } =
   Astro.props;
 ---
 
-<a class:list={["text-lg", text_color_1]} href="/">
-  <img
-    class="my-0 py-0 w-26 h-26 flex ml-8 mr-8 rounded-full"
-    src={personalPhoto.src}
-    alt="Mohamed Tarek"
-  />
-  <p class:list={["text-xl my-0 pb-4 pt-7 pl-4 font-bold", text_color_1]}>
-    Mohamed Tarek
-  </p>
+<a style={`--text-color-1: ${text_color_1};`} href="/">
+  <img src={personalPhoto.src} alt="Mohamed Tarek" />
+  <p>Mohamed Tarek</p>
 </a>
-<div class={text_color_2}>
-  <div class="pl-6 pt-3 text-lg">
+<section style={`--text-color-2: ${text_color_2};`}>
+  <div>
     <IconCard icon={icon(faMapMarkerAlt)}> Sharjah </IconCard>
     <IconCard href="https://github.com/mohamed82008/" icon={icon(faGithub)}>
       GitHub
@@ -59,10 +53,30 @@ const { text_color_1 = "text-orange-200", text_color_2 = "text-white" } =
       arXiv
     </IconCard>
   </div>
-</div>
+</section>
 
 <style>
-  a {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
+  }
+  a {
+    font-size: 1.125rem;
+    color: var(--text-color-1);
+    img {
+      width: 7rem;
+      border-radius: 3.5rem;
+      margin: 1em;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+  section {
+    color: var(--text-color-2);
   }
 </style>

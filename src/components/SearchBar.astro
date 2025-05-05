@@ -1,6 +1,6 @@
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 <script src="/pagefind/pagefind-ui.js" is:inline></script>
-<div class="bg-slate-100 p-0 pl-5" id="search"></div>
+<div id="search"></div>
 <script>
   window.addEventListener("DOMContentLoaded", (event) => {
     new PagefindUI({
@@ -13,5 +13,12 @@
 </script>
 
 <style>
-  @import "tailwindcss";
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  #search {
+    background-color: oklch(96.8% 0.007 247.896);
+  }
 </style>

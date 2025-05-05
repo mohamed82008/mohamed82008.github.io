@@ -21,15 +21,12 @@ import SearchBar from "../components/SearchBar.astro";
   <body>
     <header>
       <h1>Mohamed Tarek, PhD</h1>
-      <p>
-        Senior Product Engineer @ PumasAI Inc.
-        <br />
-        Research Affiliate @ University of Sydney
-      </p>
+      <p>Senior Product Engineer @ PumasAI Inc.</p>
+      <p>Research Affiliate @ University of Sydney</p>
     </header>
     <main>
       <aside>
-        <LeftSide text_color_1="text-blue-500" text_color_2="text-black" />
+        <LeftSide text_color_1="rgb(105, 87, 20)" />
       </aside>
       <section>
         <div class="search-bar-container">
@@ -115,20 +112,21 @@ import SearchBar from "../components/SearchBar.astro";
       position: sticky;
       z-index: 2;
       top: 0;
+      display: grid;
+      h1 {
+        padding-bottom: 1rem;
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: white;
+      }
+      p {
+        font-size: 1.2rem;
+        color: rgb(202, 194, 165);
+      }
+      p:not(:first-of-type) {
+        padding-top: 0.3em;
+      }
     }
-
-    header > h1 {
-      padding-bottom: 1rem;
-      font-size: 2.3rem;
-      font-weight: bold;
-      color: white;
-    }
-
-    header > p {
-      font-size: 1.3rem;
-      color: rgb(202, 194, 165);
-    }
-
     main {
       padding-right: 60px;
       display: grid;
@@ -137,17 +135,17 @@ import SearchBar from "../components/SearchBar.astro";
     }
 
     aside {
-      padding-left: 40px;
+      padding-left: 20%;
       margin-top: 10%;
       position: sticky;
-      min-width: 250px;
+      min-width: 240px;
+      max-width: 240px;
       height: 25vh;
       top: 30%;
       background: var(--primary_bg_color);
     }
 
     section {
-      margin-left: 10px;
       padding-bottom: 10px;
 
       .search-bar-container {
@@ -167,10 +165,9 @@ import SearchBar from "../components/SearchBar.astro";
         display: grid;
         grid-template-columns: repeat(auto-fit, 260px);
         row-gap: 30px;
-        column-gap: 5px;
+        column-gap: 20px;
         justify-content: space-around;
         margin-top: 80px;
-        margin-left: 5%;
         margin-right: 10%;
 
         a {
@@ -203,12 +200,13 @@ import SearchBar from "../components/SearchBar.astro";
 
           h2 {
             margin-bottom: 0.1em;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: bold;
             color: oklch(27.9% 0.041 260.031);
           }
 
           p {
+            font-size: 0.95rem;
             margin-bottom: 0.1em;
             color: oklch(27.9% 0.041 260.031);
           }

@@ -4,8 +4,8 @@ const { href = "", icon = "", path = "" } = Astro.props;
 
 {
   href ? (
-    <a class="flex pb-2" href={href}>
-      <div class="w-4.5 h-4.5 pt-0.5 mr-3">
+    <a class="location" href={href}>
+      <div class="img-container ">
         {path ? <img src={path} /> : <Fragment set:html={icon.html} />}
       </div>
       <span>
@@ -13,8 +13,8 @@ const { href = "", icon = "", path = "" } = Astro.props;
       </span>
     </a>
   ) : (
-    <div class="flex pb-2">
-      <div class="w-3.5 h-3.5 pt-0.5 mr-3">
+    <div class="location">
+      <div class="img-container">
         <Fragment set:html={icon.html} />
       </div>
       <span>
@@ -25,5 +25,26 @@ const { href = "", icon = "", path = "" } = Astro.props;
 }
 
 <style>
-  @import "tailwindcss";
+  * {
+    box-sizing: border-box;
+    margin: 0.05em 0.1em;
+    padding: 0;
+    font-size: 1em;
+  }
+  .img-container {
+    display: inline;
+    width: 1rem;
+    height: 1rem;
+    padding-top: 0.1em;
+    margin-right: 0.5em;
+  }
+  .location {
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 0.6em;
+    color: inherit;
+  }
+  img {
+    width: 100%;
+  }
 </style>
